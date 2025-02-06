@@ -1,0 +1,27 @@
+.cards {
+  width: 1280px;
+  height: 970px;
+  margin: 0 auto;
+}
+
+.card__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 20px;
+  padding: 0;
+  border-bottom: 1px solid #21212166;
+}
+
+.card__images {
+  width: 413px;
+  height: 413px;
+}
+
+.card__item {
+  list-style: none;
+}
+
+.card__description {
+  margin: 0;
+}

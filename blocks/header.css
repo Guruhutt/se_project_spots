@@ -1,17 +1,11 @@
 .header {
-  background-color: bisque;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
 }
 
-.header_image {
-  margin: 0 auto;
-  display: flex;
-  align-self: center;
-}
-
-.header_avatar {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 505px;
-  height: 190px;
-  margin: 0;
+.header__logo {
+  width: 94px;
+  height: 26px;
+  border: 1px;
 }
