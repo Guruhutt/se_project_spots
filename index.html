@@ -25,71 +25,87 @@
           <div class="profile__column">
             <h1 class="profile__name">Bessie Coleman</h1>
             <p class="profile__description">Civil Aviator</p>
-            <button class="profile__button_edit">
+            <button type="button" class="profile__button_edit">
               <img src="./images/Group 2.svg" alt="Edit Profile" />
               Edit Profile
             </button>
           </div>
-          <button class="profile__button_Add">
+          <button type="submit" class="profile__button_Add">
             <img src="./images/Group 26.svg" alt="Edit Profile" />
             New post
           </button>
         </div>
         <section class="cards">
-          <div class="card__content">
-            <ul class="card__list">
-              <li class="card__item">
-                <img
-                  src="./images/Val_Thorens.jpg"
-                  alt="Window view of homes"
-                  class="card__images"
-                />
-                <p class="card__description">Val Thorens</p>
-              </li>
-              <li class="card__item">
-                <img
-                  src="./images/Restaurant_terrace.jpg"
-                  alt="Window view of homes"
-                  class="card__images"
-                />
-                <p class="card__description">Restaurant terrace</p>
-              </li>
-              <li class="card__item">
-                <img
-                  src="./images/outdoor_cafe.jpg"
-                  alt="Window view of homes"
-                  class="card__images"
-                />
-                <p class="card__description">An outdoor cafe</p>
-              </li>
-              <li class="card__item">
-                <img
-                  src="./images/Bridge.jpg"
-                  alt="Window view of homes"
-                  class="card__images"
-                />
-                <p class="card__description">
+          <ul class="cards__list">
+            <li class="card">
+              <img
+                src="./images/Val_Thorens.jpg"
+                alt="Window view of homes"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__description">Val Thorens</h2>
+                <button class="card__like-button" type="button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/Restaurant_terrace.jpg"
+                alt="Window view of homes"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__description">Restaurant terrace</h2>
+                <button class="card__like-button" type="button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/outdoor_cafe.jpg"
+                alt="Window view of homes"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__description">An outdoor cafe</h2>
+                <button class="card__like-button" type="button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/Bridge.jpg"
+                alt="Window view of homes"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__description">
                   A very long bridge, over the forest...
-                </p>
-              </li>
-              <li class="card__item">
-                <img
-                  src="./images/Tunnel.jpg"
-                  alt="Window view of homes"
-                  class="card__images"
-                />
-                <p class="card__description">Tunnel with morning light</p>
-              </li>
-              <li class="card__item">
-                <img
-                  src="./images/Mountain_house.jpg"
-                  alt="Window view of homes"
-                  class="card__images"
-                />
-                <p class="card__description">Mountain house</p>
-              </li>
-            </ul>
-          </div>
+                </h2>
+                <button class="card__like-button" type="button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/Tunnel.jpg"
+                alt="Window view of homes"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__description">Tunnel with morning light</h2>
+                <button class="card__like-button" type="button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/Mountain_house.jpg"
+                alt="Window view of homes"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h2 class="card__description">Mountain house</h2>
+                <button class="card__like-button" type="button"></button>
+              </div>
+            </li>
+          </ul>
         </section>
       </main>
       <footer class="footer"></footer>

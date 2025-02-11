@@ -4,24 +4,11 @@
   margin: 0 auto;
 }
 
-.card__list {
-  display: flex;
-  flex-wrap: wrap;
-
+.cards__list {
+  display: grid;
+  grid-template-columns: 413px 413px 413px;
+  grid-template-rows: 413px 413px 413px;
   gap: 20px;
   padding: 0;
   border-bottom: 1px solid #21212166;
-}
-
-.card__images {
-  width: 413px;
-  height: 413px;
-}
-
-.card__item {
-  list-style: none;
-}
-
-.card__description {
-  margin: 0;
 }
