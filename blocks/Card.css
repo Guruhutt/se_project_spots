@@ -41,3 +41,7 @@
   width: 23px;
   border: 2px #212121;
 }
+
+.card__like-button:hover {
+  opacity: 100%;
+}
