@@ -37,6 +37,10 @@
   border: none;
 }
 
+.profile__button_image {
+  align-items: center;
+}
+
 .profile__button_Add {
   margin-left: auto;
   border-radius: 8%;

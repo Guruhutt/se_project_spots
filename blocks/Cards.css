@@ -1,14 +1,14 @@
 .cards {
-  width: 1280px;
-  height: 970px;
   margin: 0 auto;
+  padding-top: 20px;
 }
 
 .cards__list {
   display: grid;
-  grid-template-columns: 413px 413px 413px;
-  grid-template-rows: 413px 413px 413px;
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, 413px);
+  gap: 40px 20px;
+  justify-content: center;
   padding: 0;
   border-bottom: 1px solid #21212166;
+  margin: 0;
 }
