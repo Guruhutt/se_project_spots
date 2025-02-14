@@ -33,7 +33,6 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
-  letter-spacing: 0%;
   color: #212121b2;
 }
 
@@ -72,9 +71,41 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
-  letter-spacing: 0px;
 }
 
 .profile__button_Add:hover {
   background: #212121cc;
+}
+
+@media screen and (max-width: 627px) {
+  .profile {
+    flex-direction: column;
+    padding-top: 20px;
+    width: 288px;
+    height: 274px;
+    padding-bottom: 20px;
+    border-bottom-width: 1px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile__avatar {
+    margin-right: 0;
+    margin-bottom: 12px;
+    height: 80px;
+    width: 80px;
+  }
+
+  .profile__column {
+    margin: 0 0 6px;
+  }
+
+  .profile__button_edit {
+    margin: 0 auto;
+  }
+
+  .profile__button_Add {
+    margin: 20px auto;
+    width: 100%;
+  }
 }
