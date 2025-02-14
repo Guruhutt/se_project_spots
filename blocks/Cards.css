@@ -12,3 +12,9 @@
   border-bottom: 1px solid #21212166;
   margin: 0;
 }
+
+@media screen and (max-width: 627px) {
+  .cards__list {
+    grid-template-columns: repeat(auto-fit, 413px);
+  }
+}
