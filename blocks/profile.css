@@ -21,13 +21,12 @@
 
 .profile__title {
   margin: 0;
-  font-family: Poppins Arial, Helvetica, sans-serif;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 32px;
   line-height: 32px;
   text-overflow: ellipsis;
   overflow: hidden;
-  line-clamp: 3;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -36,14 +35,13 @@
 
 .profile__description {
   margin: 0;
-  font-family: Poppins Arial, Helvetica, sans-serif;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
   color: #212121b2;
   text-overflow: ellipsis;
   overflow: hidden;
-  line-clamp: 3;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -81,7 +79,7 @@
   height: 52px;
   margin-top: auto;
   text-align: center;
-  font-family: Poppins;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
