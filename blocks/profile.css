@@ -1,14 +1,13 @@
 .profile {
   max-width: 1280px;
-  max-height: 210px;
   padding-bottom: 20px;
   display: flex;
   border-bottom: 1px solid #21212166;
 }
 
 .profile__avatar {
-  border: 8px;
-  border-radius: 8px;
+  width: 190px;
+  height: 190px;
 }
 
 .profile__column {
@@ -25,9 +24,9 @@
   font-weight: 500;
   font-size: 32px;
   line-height: 32px;
+  color: #212121;
   text-overflow: ellipsis;
   overflow: hidden;
-  line-clamp: 3;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -43,7 +42,6 @@
   color: #212121b2;
   text-overflow: ellipsis;
   overflow: hidden;
-  line-clamp: 3;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -55,6 +53,7 @@
   color: #212121;
   height: 16px;
   width: 118px;
+  font-weight: 500;
   background: none;
   opacity: 70%;
   border: none;
@@ -65,6 +64,7 @@
 }
 
 .profile__button_edit:hover {
+  cursor: pointer;
   opacity: 100%;
 }
 
@@ -74,13 +74,14 @@
 
 .profile__button_Add {
   margin-left: auto;
+  display: block;
+  gap: 8px;
   border-radius: 8%;
   background-color: #212121;
   color: #fcf5e5;
   width: 149px;
   height: 52px;
   margin-top: auto;
-  text-align: center;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -88,6 +89,7 @@
 }
 
 .profile__button_Add:hover {
+  cursor: pointer;
   background: #212121cc;
 }
 
@@ -112,6 +114,7 @@
 
   .profile__title {
     max-width: 288px;
+    font-weight: 20px;
   }
 
   .profile__description {
