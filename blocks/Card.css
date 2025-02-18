@@ -39,6 +39,7 @@
   width: 23px;
   cursor: pointer;
   border: 0;
+  display: flex;
 }
 
 .card__like-button:hover {
