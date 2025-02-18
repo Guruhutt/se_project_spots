@@ -108,22 +108,24 @@
 
   .profile__title {
     max-width: 288px;
-    font-weight: 20px;
+    font-size: 20px;
+    margin: 0 auto;
   }
 
   .profile__description {
     max-width: 288px;
+    margin: 0 auto;
   }
 
   .profile__column {
     margin: 0 0 6px;
   }
 
-  .profile__button_edit {
+  .edit_button {
     margin: 0 auto;
   }
 
-  .profile__button_Add {
+  .add_button {
     margin: 20px auto;
     width: 100%;
   }
