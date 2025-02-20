@@ -29,6 +29,9 @@
   text-overflow: ellipsis;
   overflow: hidden;
   max-width: 420px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .profile__description {
@@ -41,9 +44,12 @@
   text-overflow: ellipsis;
   overflow: hidden;
   max-width: 420px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
-.edit_button {
+.profile__button-edit {
   margin-top: auto;
   color: #212121;
   height: 16px;
@@ -58,16 +64,16 @@
   display: flex;
 }
 
-.edit_button:hover {
+.profile__button-edit:hover {
   cursor: pointer;
   opacity: 100%;
 }
 
-.button_image {
+.profile__button-image {
   margin-right: 8px;
 }
 
-.add_button {
+.profile__button-add {
   margin-left: auto;
   display: block;
   gap: 8px;
@@ -83,7 +89,7 @@
   line-height: 16px;
 }
 
-.add_button:hover {
+.profile__button-add:hover {
   cursor: pointer;
   background: #212121cc;
 }
