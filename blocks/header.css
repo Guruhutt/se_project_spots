@@ -3,6 +3,7 @@
   background-color: #fff;
   display: flex;
   justify-content: center;
+  padding: 10px;
 }
 
 .header__logo {
