@@ -127,11 +127,11 @@
     margin: 0 0 6px;
   }
 
-  .edit_button {
+  .profile__button-edit {
     margin: 0 auto;
   }
 
-  .add_button {
+  .profile__button-add {
     margin: 20px auto;
     width: 100%;
   }
