@@ -1,6 +1,5 @@
 .card {
   list-style-type: none;
-  width: 413px;
 }
 
 .card__image {
@@ -41,6 +40,7 @@
   cursor: pointer;
   border: 0;
   display: flex;
+  padding: 0;
 }
 
 .card__like-button:hover {
@@ -50,11 +50,23 @@
 @media screen and (max-width: 627px) {
   .card__image {
     height: 288px;
+    width: 288px;
   }
 
   .card__description {
     line-height: 16px;
     font-size: 16px;
     width: 257px;
+  }
+
+  .card__like-button {
+    margin-top: 12px;
+    padding: 0;
+  }
+
+  .card__content {
+    width: 288px;
+    height: 18px;
+    justify-content: space-between;
   }
 }
