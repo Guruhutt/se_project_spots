@@ -1,7 +1,7 @@
 .profile {
   display: flex;
   border-bottom: 1px solid #21212166;
-  padding: 34px 16px 20px;
+  padding: 34px 20px;
   margin: 0 auto;
   justify-content: center;
 }
@@ -98,7 +98,7 @@
 @media screen and (max-width: 627px) {
   .profile {
     flex-direction: column;
-    padding: 20px 16px;
+    padding: 20px;
     border-bottom-width: 1px;
     align-items: center;
     text-align: center;
@@ -132,7 +132,7 @@
   }
 
   .profile__button-add {
-    margin: 20px auto;
+    margin: 20px auto 0;
     width: 100%;
   }
 }
