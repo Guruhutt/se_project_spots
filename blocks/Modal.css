@@ -38,6 +38,9 @@
   padding: 0;
   background-color: transparent;
   opacity: 70%;
+  background-image: url("../images/Close_Icon.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .modal__close-btn:hover {

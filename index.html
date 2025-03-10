@@ -41,74 +41,15 @@
         </section>
         <section class="cards page__section">
           <ul class="cards__list">
-            <li class="card">
-              <img
-                src="./images/Val_Thorens.jpg"
-                alt="Window view of homes"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__description">Val Thorens</h2>
-                <button class="card__like-button" type="button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/Restaurant_terrace.jpg"
-                alt="Window view of homes"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__description">Restaurant terrace</h2>
-                <button class="card__like-button" type="button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/outdoor_cafe.jpg"
-                alt="Window view of homes"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__description">An outdoor cafe</h2>
-                <button class="card__like-button" type="button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/Bridge.jpg"
-                alt="Window view of homes"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__description">
-                  A very long bridge, over the forest...
-                </h2>
-                <button class="card__like-button" type="button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/Tunnel.jpg"
-                alt="Window view of homes"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__description">Tunnel with morning light</h2>
-                <button class="card__like-button" type="button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/Mountain_house.jpg"
-                alt="Window view of homes"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__description">Mountain house</h2>
-                <button class="card__like-button" type="button"></button>
-              </div>
-            </li>
+            <template id="card-template">
+              <li class="card">
+                <img src="" alt="" class="card__image" />
+                <div class="card__content">
+                  <h2 class="card__description"></h2>
+                  <button class="card__like-button" type="button"></button>
+                </div>
+              </li>
+            </template>
           </ul>
         </section>
       </main>
@@ -117,28 +58,22 @@
       </footer>
       <div class="modal" id="edit-profile-modal">
         <div class="modal__container">
-          <button type="submit" class="modal__close-btn">
-            <img
-              class="modal__close-img"
-              src="./images/Group_27.png"
-              alt="Close Icon"
-            />
-          </button>
+          <button type="button" class="modal__close-btn"></button>
           <h2 class="modal__title">Edit profile</h2>
           <form name="edit-profile" class="modal__form">
-            <label for="name" class="modal__label">
+            <label for="profile-name-input" class="modal__label">
               Name
               <input
-                id="name"
+                id="profile-name-input"
                 type="text"
                 class="modal__input"
                 placeholder="Type your name"
               />
             </label>
-            <label for="Description" class="modal__label">
+            <label for="profile-description-input" class="modal__label">
               Describe
               <input
-                id="Description"
+                id="profile-description-input"
                 type="text"
                 class="modal__input"
                 placeholder="Describe yourself"
