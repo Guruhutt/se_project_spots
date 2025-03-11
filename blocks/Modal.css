@@ -78,6 +78,11 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+  cursor: pointer;
+}
+
+.modal__input:hover {
+  border: 2px solid rgb(0, 0, 0);
 }
 
 .modal__submit-btn {
@@ -88,6 +93,13 @@
   color: #fcf5e5;
   margin: 0;
   border-style: none;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.modal__submit-btn:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 627px) {
