@@ -38,13 +38,17 @@ const editModalForm = editModal.querySelector(".modal__form");
 const modalInputDes = editModal.querySelector("#profile-description-input");
 const modalInputName = editModal.querySelector("#profile-name-input");
 
+//Card Modal elements
 const cardModal = document.querySelector("#new-post-modal");
 const cardModalPostBtn = document.querySelector(".profile__button-add");
 const cardModalCloseBtn = cardModal.querySelector(".modal__close-btn");
 const cardModalForm = cardModal.querySelector(".modal__form");
 
+//card Modal input elements
 const cardLinkInput = cardModal.querySelector("#image-link-input");
 const cardCaptionInput = cardModal.querySelector("#image-caption-input");
+
+//like Buttom elements
 
 const cardTemplate = document.querySelector("#card-template");
 const cardsList = document.querySelector(".cards__list");
@@ -56,10 +60,20 @@ function getCardElement(data) {
 
   const cardNameEl = cardElement.querySelector(".card__description");
   const cardImages = cardElement.querySelector(".card__image");
+  const cardLikeBtn = cardElement.querySelector(".card__like-button");
+  const cardDeleteBtn = cardElement.querySelector(".card__delete-button");
+
   cardNameEl.textContent = data.name;
   cardImages.src = data.link;
   cardImages.alt = data.name;
 
+  cardLikeBtn.addEventListener("click", () => {
+    cardLikeBtn.classList.toggle("card__like-button_liked");
+  });
+
+  cardDeleteBtn.addEventListener("click", () => {
+    cardElement.remove();
+  });
   return cardElement;
 }
 
@@ -69,6 +83,10 @@ function openModal(modal) {
 
 function closeModal(modal) {
   modal.classList.toggle("modal_opened");
+}
+
+function likeImage(Like) {
+  Like.classList.toggle("card__like-button_liked");
 }
 
 function handleEditFormSubmit(evt) {
