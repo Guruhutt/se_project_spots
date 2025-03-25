@@ -65,8 +65,10 @@
 }
 
 .card__like-button_liked {
-  background-image: url(../images/Image__Liked.svg);
+  background-image: url(../images/Union_L.svg);
   opacity: 1;
+  background-repeat: no-repeat;
+  background-color: transparent;
 }
 
 .card__like-button_liked:hover {

@@ -97,10 +97,6 @@ function closeModal(modal) {
   modal.classList.toggle("modal_opened");
 }
 
-function likeImage(Like) {
-  Like.classList.toggle("card__like-button_liked");
-}
-
 function handleEditFormSubmit(evt) {
   evt.preventDefault();
   profileName.textContent = modalInputName.value;
