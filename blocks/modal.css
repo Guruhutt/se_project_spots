@@ -35,6 +35,7 @@
   width: unset;
   background: transparent;
   object-fit: contain;
+  max-width: max-content;
 }
 
 .modal__image {
@@ -151,10 +152,6 @@
     padding: 12px;
   }
 
-  .modal__container_type_preview {
-    padding: 0;
-  }
-
   .modal__label {
     margin-bottom: 24px;
   }
@@ -174,8 +171,7 @@
   }
 
   .modal__close_type_preview {
-    position: relative;
-    bottom: 260px;
-    left: 250px;
+    position: absolute;
+    bottom: 300px;
   }
 }
