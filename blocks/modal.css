@@ -38,6 +38,14 @@
   max-width: max-content;
 }
 
+.modal__error {
+  color: #ff0000b2;
+  margin: 0;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+}
+
 .modal__image {
   max-width: 80vw;
   max-height: 80vh;
@@ -116,6 +124,10 @@
   cursor: pointer;
 }
 
+.modal__input_state_error {
+  border: 1px solid #ff000099;
+}
+
 .modal__input:hover {
   border: 2px solid rgb(0, 0, 0);
 }
@@ -135,6 +147,11 @@
 
 .modal__submit-btn:hover {
   cursor: pointer;
+  background: #212121cc;
+}
+
+.modal__submit-btn-disabled {
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 627px) {
