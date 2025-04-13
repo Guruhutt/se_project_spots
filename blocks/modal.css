@@ -150,7 +150,7 @@
   background: #212121cc;
 }
 
-.modal__submit-btn-disabled {
+.modal__submit_btn_disabled {
   opacity: 0.5;
 }
 
