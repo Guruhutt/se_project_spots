@@ -44,6 +44,7 @@ const cardModalPostBtn = document.querySelector(".profile__button-add");
 const cardModalCloseBtn = cardModal.querySelector(".modal__close");
 const cardModalForm = cardModal.querySelector(".modal__form");
 const cardSubmitBtn = cardModal.querySelector(".modal__submit-btn");
+
 //card Modal input elements
 const cardLinkInput = cardModal.querySelector("#image-link-input");
 const cardCaptionInput = cardModal.querySelector("#image-caption-input");
@@ -56,6 +57,8 @@ const previewModalCloseBtn = previewModal.querySelector(".modal__close");
 
 const cardTemplate = document.querySelector("#card-template");
 const cardsList = document.querySelector(".cards__list");
+
+const modalOpenSpace = document.querySelectorAll(".modal");
 
 function getCardElement(data) {
   const cardElement = cardTemplate.content
@@ -141,6 +144,23 @@ cardModalCloseBtn.addEventListener("click", () => {
 
 previewModalCloseBtn.addEventListener("click", () => {
   closeModal(previewModal);
+});
+
+modalOpenSpace.forEach((modal) => {
+  modal.addEventListener("click", function (evt) {
+    if (
+      modal.classList.contains("modal_opened") &&
+      evt.target.classList.contains("modal")
+    ) {
+      closeModal(modal);
+    }
+  });
+
+  document.addEventListener("keyup", function (evt) {
+    if (modal.classList.contains("modal_opened") && evt.key === "Escape") {
+      closeModal(modal);
+    }
+  });
 });
 
 cardModalForm.addEventListener("submit", handleCardFormSubmit);
