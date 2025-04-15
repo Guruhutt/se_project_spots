@@ -58,7 +58,7 @@ const previewModalCloseBtn = previewModal.querySelector(".modal__close");
 const cardTemplate = document.querySelector("#card-template");
 const cardsList = document.querySelector(".cards__list");
 
-const modalOpenSpace = document.querySelectorAll(".modal");
+const modals = document.querySelectorAll(".modal");
 
 function getCardElement(data) {
   const cardElement = cardTemplate.content
@@ -94,10 +94,12 @@ function getCardElement(data) {
 
 function openModal(modal) {
   modal.classList.add("modal_opened");
+  document.addEventListener("keydown", handleEscape);
 }
 
 function closeModal(modal) {
-  modal.classList.toggle("modal_opened");
+  modal.classList.remove("modal_opened");
+  document.removeEventListener("keydown", handleEscape);
 }
 
 function handleEditFormSubmit(evt) {
@@ -105,7 +107,6 @@ function handleEditFormSubmit(evt) {
   profileName.textContent = modalInputName.value;
   profileDes.textContent = modalInputDes.value;
   closeModal(editModal);
-  disableButton(cardSubmitBtn, settings);
 }
 
 function handleCardFormSubmit(evt) {
@@ -146,7 +147,7 @@ previewModalCloseBtn.addEventListener("click", () => {
   closeModal(previewModal);
 });
 
-modalOpenSpace.forEach((modal) => {
+modals.forEach((modal) => {
   modal.addEventListener("click", function (evt) {
     if (
       modal.classList.contains("modal_opened") &&
@@ -162,6 +163,13 @@ modalOpenSpace.forEach((modal) => {
     }
   });
 });
+
+function handleEscape(evt) {
+  if (evt.key === "Escape") {
+    const openedPopup = document.querySelector(".modal_opened");
+    closeModal(openedPopup);
+  }
+}
 
 cardModalForm.addEventListener("submit", handleCardFormSubmit);
 
