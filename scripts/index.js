@@ -156,12 +156,6 @@ modals.forEach((modal) => {
       closeModal(modal);
     }
   });
-
-  document.addEventListener("keyup", function (evt) {
-    if (modal.classList.contains("modal_opened") && evt.key === "Escape") {
-      closeModal(modal);
-    }
-  });
 });
 
 function handleEscape(evt) {
