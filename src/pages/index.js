@@ -1,3 +1,18 @@
+import { enableValidation, settings } from "../scripts/validation.js";
+import "./index.css";
+import avatar from "../images/avatar.jpg";
+import button from "../images/Group_2.svg";
+import Group_26 from "../images/Group_26.svg";
+
+const avatarPicture = document.getElementById("profile__avatar");
+avatarPicture.src = avatar;
+
+const buttonPicture = document.getElementById("profile__button");
+buttonPicture.src = button;
+
+const Group_26button = document.getElementById("new__picture");
+Group_26button.src = Group_26;
+
 const initialCards = [
   {
     name: "Val Thorens",
@@ -171,3 +186,5 @@ initialCards.forEach((card) => {
   const cardEL = getCardElement(card);
   cardsList.append(cardEL);
 });
+
+enableValidation(settings);
