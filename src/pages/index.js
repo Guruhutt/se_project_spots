@@ -3,6 +3,8 @@ import "./index.css";
 import avatar from "../images/avatar.jpg";
 import button from "../images/Group_2.svg";
 import Group_26 from "../images/Group_26.svg";
+import Api from "../scripts/Api.js";
+import { data } from "autoprefixer";
 
 const avatarPicture = document.getElementById("profile__avatar");
 avatarPicture.src = avatar;
@@ -39,6 +41,19 @@ const initialCards = [
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/6-photo-by-moritz-feldmann-from-pexels.jpg",
   },
 ];
+
+const api = new Api({
+  baseUrl: "https://around-api.en.tripleten-services.com/v1",
+  headers: {
+    authorization: "97b5d94e-2030-4e5f-8d5a-22aeac9eb64c",
+    "Content-Type": "application/json",
+  },
+});
+
+api.getInitialCards().then((cards) => {
+  console.log(cards);
+});
+
 //Edit profile elements
 const profilEditButton = document.querySelector(".profile__button-edit");
 const profileName = document.querySelector(".profile__title");
