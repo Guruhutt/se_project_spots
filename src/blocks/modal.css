@@ -262,4 +262,9 @@
     position: relative;
     left: 260px;
   }
+
+  .modal__close--delete {
+    position: relative;
+    left: 260px;
+  }
 }

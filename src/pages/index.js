@@ -97,6 +97,7 @@ api
     });
     profileName.textContent = user.name;
     profileDes.textContent = user.about;
+    avatarPicture.src = user.avatar;
   })
   .catch(console.error);
 
@@ -117,13 +118,19 @@ function getCardElement(data) {
   function handleLike(evt, id) {
     const isLiked = cardLikeBtn.classList.contains("card__like-button_liked");
     if (!isLiked) {
-      api.handleLike(id, false).then(() => {
-        evt.target.classList.add("card__like-button_liked");
-      });
+      api
+        .handleLike(id, false)
+        .then(() => {
+          evt.target.classList.add("card__like-button_liked");
+        })
+        .catch(console.error);
     } else
-      api.handleLike(id, true).then(() => {
-        evt.target.classList.remove("card__like-button_liked");
-      });
+      api
+        .handleLike(id, true)
+        .then(() => {
+          evt.target.classList.remove("card__like-button_liked");
+        })
+        .catch(console.error);
   }
 
   if (data.isLiked) {
@@ -168,7 +175,7 @@ function handleEditFormSubmit(evt) {
     })
     .catch(console.error)
     .finally(() => {
-      submitBtn.textContent = "Save";
+      setButtonText(submitBtn, false);
     });
 }
 
@@ -180,14 +187,14 @@ function handleCardFormSubmit(evt) {
     .addNewCard({ name: cardCaptionInput.value, link: cardLinkInput.value })
     .then((data) => {
       const cardEl = getCardElement(data);
-      cardsList.append(cardEl);
+      cardsList.prepend(cardEl);
       closeModal(cardModal);
       evt.target.reset();
       disableButton(cardSubmitBtn, settings);
     })
     .catch(console.error)
     .finally(() => {
-      submitBtn.textContent = "Save";
+      setButtonText(submitBtn, false);
     });
 }
 
@@ -206,7 +213,7 @@ function handleAvatarSubmit(evt) {
     })
     .catch(console.error)
     .finally(() => {
-      submitBtn.textContent = "Save";
+      setButtonText(submitBtn, false);
     });
 }
 
@@ -221,8 +228,9 @@ function handleDeleteSubmit(evt) {
       closeModal(deleteModal);
     })
     .catch(console.error)
+
     .finally(() => {
-      submitBtn.textContent = "Delete";
+      setButtonText(submitBtn, false, "Deleting...", "Delete");
     });
 }
 
