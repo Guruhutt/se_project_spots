@@ -30,6 +30,12 @@
   border-radius: 8px;
 }
 
+.modal__container--delete {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .modal__container_type_preview {
   padding: 0;
   width: unset;
@@ -78,10 +84,19 @@
   background-repeat: no-repeat;
 }
 
+.modal__close--delete {
+  position: absolute;
+  top: 0;
+  right: -32.5px;
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/Close_image_preview_Icon.svg");
+}
+
 .modal__close_type_preview {
   background-image: url(../images/Close_image_preview_Icon.svg);
   top: 0;
-  right: -32.5px;
+  right: -52.5px;
   width: 40px;
   height: 40px;
 }
@@ -100,6 +115,13 @@
   color: #212121;
 }
 
+.modal__title--delete {
+  font-family: Poppins Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+}
+
 .modal__label {
   display: flex;
   flex-direction: column;
@@ -111,6 +133,11 @@
   line-height: 17px;
   color: #212121;
   opacity: 70%;
+}
+
+.modal__form--delete {
+  gap: 20px;
+  display: flex;
 }
 
 .modal__input {
@@ -145,11 +172,54 @@
   font-size: 16px;
 }
 
+.modal__submit-btn--delete {
+  width: 156px;
+  height: 52px;
+  border-radius: 8px;
+  background-color: #ff6565;
+  color: #212121;
+  margin: 0;
+  border-style: none;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.modal__btn--cancel {
+  width: 156px;
+  height: 52px;
+  border-radius: 8px;
+  border-color: #212121;
+  border: 1px;
+  border-style: solid;
+  background-color: #fff;
+  color: #212121;
+  margin: 0;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.modal__btn--cancel:hover {
+  cursor: pointer;
+  background: #212121;
+  color: #fff;
+}
+
+.modal__btn--cancel_disabled {
+  background-color: #212121;
+  opacity: 0.5;
+}
+
 .modal__submit-btn:hover {
   cursor: pointer;
   background: #212121cc;
 }
 
+.modal__submit-btn--delete:hover {
+  cursor: pointer;
+  background: #ff3333;
+}
 .modal__submit-btn_disabled {
   background-color: #212121;
   opacity: 0.5;
@@ -189,6 +259,11 @@
   }
 
   .modal__close_type_preview {
+    position: relative;
+    left: 260px;
+  }
+
+  .modal__close--delete {
     position: relative;
     left: 260px;
   }

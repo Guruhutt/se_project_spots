@@ -6,3 +6,5 @@ An image gallery to share,post and edit images made through the use of flex prop
 
 link to GitHub page (https://guruhutt.github.io/se_project_spots/)
 link to video (https://drive.google.com/file/d/1TZTDRihzIUGxoUvRhJOCVgzpSM3fxN6-/view?usp=drive_link)
+
+https://github.com/Guruhutt/se_project_spots/pull/new/project-9
